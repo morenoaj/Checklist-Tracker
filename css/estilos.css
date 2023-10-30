@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #073b4c;
+  }
+  
+  .container {
+    width: 90%;
+    min-width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .kanban-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: sans-serif;
+  }
+
+  .kanban-head-title {
+    font-size: 2.5rem;
+    color: #e4e4e4;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    margin: 0.3rem;
+  }
+
+  .kanban-table {
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: space-between;
+    font-family: sans-serif;
+    margin-bottom: 2rem;
+  }
+
+  .kanban-form-container {
+    grid-column-start: 1; 
+    grid-column-end: 4; 
+    width: 500px; 
+    margin: 0 auto;
+}
+
+  .kanban-block {
+    text-align: center;
+    padding: 0.6rem;
+    margin: 0.5rem;
+    border-radius: 0.3rem;
+    box-shadow: 2px 2px 2px 4px rgba(255, 255, 255, 0.1);
+  }
+
+  .kanban-form {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #118ab2;
+    align-items: center;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px 4px rgba(255, 255, 255, 0.1);
+  }
+
+  .kanban-form-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #e4e4e4;
+    border-radius: 0.5rem;
+  }
+
+  .container-inputs {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-text {
+    height: 1.5rem;
+    border-radius: 5px;
+    border: 0;
+    padding-left: 10px;
+    margin: 0.3rem;
+  }
+
+  .textarea-text {
+    height: auto;
+    border-radius: 5px;
+    border: 0;
+    padding-left: 10px;
+  }
+
+  .btn-crear {
+    width: 140px;
+    background: #50d0f7;
+    color: #e4e4e4;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    font-size: 1.1rem;
+    margin: 0.3rem;
+    transition: 0.5s;
+  }
+
+  .btn-crear:hover {
+    background: #097fa9;
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-editar {
+    width: 40%;
+    background: #ea6382;
+    color: #e4e4e4;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    font-size: 1.1rem;
+    margin: 0.3rem;
+    transition: 0.5s;
+  }
+
+  .btn-editar:hover {
+    background: #4e0543;
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-eliminar {
+    width: 40%;
+    background: #cc0a0a;
+    color: #e4e4e4;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    font-size: 1.1rem;
+    margin: 0.3rem;
+    transition: 0.5s;
+  }
+
+  .btn-eliminar:hover {
+    background: #820707;
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #pendientes {
+    height: fit-content;
+    background-color: #ef476f;
+  }
+  
+  #procesos {
+    height: fit-content;
+    background-color: #ffd166;
+  }
+  
+  #completados {
+    height: fit-content;
+    background-color: #06d6a0;
+  }
+  
+  .tarea {
+    text-align: start;
+    background-color: white;
+    margin: 0.2rem 0rem 0.3rem 0rem;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.2rem 0.5rem 2rem;
+  }
+
+.navbar-item {
+    display: inline-block;
+    margin: 0 10px; /* Ajusta el margen entre los elementos de navegación */
+}
+
+.button-link {
+    display: block;
+    width: 50px; /* Ancho de la imagen */
+    height: 50px; /* Altura de la imagen */
+    background-image: url('/assets/informe.png'); /* Ruta de tu imagen PNG */
+    background-size: cover; /* Ajusta el tamaño de la imagen para llenar el enlace */
+    text-indent: -9999px; /* Oculta el texto del enlace */
+    margin: 20px; /* Ajusta la separación desde el margen superior */
+}
