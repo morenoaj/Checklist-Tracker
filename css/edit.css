@@ -1,0 +1,60 @@
+body{
+    background-color: #f8ffe5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+/* Estilos de la tarjeta */
+.card {
+    background-color: #d0f4de;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+/* Estilos para el formulario dentro de la tarjeta */
+.card form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para los campos de entrada en el formulario */
+.card input[type="text"],
+.card textarea,
+.card input[type="date"],
+.card select {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #8b8686;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón "Guardar Cambios" */
+.card input[type="submit"] {
+    background-color: #1b9aaa;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para el encabezado "Editar Tarea" */
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el selector de prioridad */
+.card select {
+    padding: 10px;
+}
+
+/* Estilos para la descripción */
+.card textarea {
+    height: 100px; /* Ajusta la altura según tus necesidades */
+}

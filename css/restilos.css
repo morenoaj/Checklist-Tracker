@@ -1,0 +1,104 @@
+/* ------------------------------------- */
+  /* Estilos para la página principal */
+  body {
+    background-color: #073b4c;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .container {
+    width: 90%;
+    min-width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff; /* Cambia el color de fondo de la sección principal */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra suave */
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Cambia el color del título */
+  }
+  
+  /* Estilos para el formulario y la tabla */
+  form {
+    margin: 20px 0;
+  }
+  
+  select, input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    background-color: #fff;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: start;
+    color: #000;
+  }
+  
+  /* Agrega más estilos según tus preferencias */
+  .kanban-head-title {
+    font-size: 2.5rem;
+    color: #e4e4e4;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    margin: 0.3rem;
+  }
+
+  .kanban-form-container {
+    grid-column-start: 1; 
+    grid-column-end: 4; 
+    width: 500px; 
+    margin: 0 auto;
+}
+
+.btn-crear {
+    width: 140px;
+    background: #50d0f7;
+    color: #e4e4e4;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    font-size: 1.1rem;
+    margin: 0.3rem;
+    transition: 0.5s;
+  }
+
+  .btn-crear:hover {
+    background: #097fa9;
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  /* Agregar estilos para el contenedor principal */
+.content-container {
+  margin-top: 20px; /* Ajusta la separación desde el margen superior según tus preferencias */
+}
+
+/* Estilos para el enlace de botón */
+.button-link {
+  display: block;
+  width: 50px; /* Ancho de la imagen */
+  height: 50px; /* Altura de la imagen */
+  background-image: url('/assets/deshacer.png'); /* Ruta de tu imagen PNG */
+  background-size: cover; /* Ajusta el tamaño de la imagen para llenar el enlace */
+  text-indent: -9999px; /* Oculta el texto del enlace */
+  margin-right: 10px; /* Ajusta el margen derecho para la separación horizontal */
+}
